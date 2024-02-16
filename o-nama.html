@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyArena - O nama</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            padding-top: 56px; /* Visina navbar-a, prilagodite prema svojim potrebama */
+        }
+    </style>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/3fe5a4bd53.js" crossorigin="anonymous"></script>
+    <!-- AOS Library for Animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+            LuckyArena
+            <img src="slike\logo.svg" alt="Logo" class="img-fluid" width="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="o-nama.html"><i class="fas fa-info-circle"></i> O nama</a></li>
+              </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Početna</a></li>
+                <li class="nav-item"><a class="nav-link" href="lol.html"><i class="fas fa-gamepad"></i> League of
+                        Legends</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="cs2.html"><i class="fas fa-gamepad"></i> Counter-Strike
+                        2</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="rocket-league.html"><i class="fas fa-gamepad"></i> Rocket
+                        League</a></li>
+                <li class="nav-item"><a class="nav-link" href="valorant.html"><i class="fas fa-gamepad"></i>
+                        Valorant</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- O nama Section -->
+    <section id="about-us" class="container mt-4 text-center" data-aos="fade-up" data-aos-duration="1500">
+        <h2>O nama</h2>
+        <img src="slike\logo.svg" alt="Logo" class="img-fluid" width="10%"><br><br>
+
+        <p class="lead">LuckyArena je platforma koja organizuje online turnire u igricama League of Legends,
+            Counter-Strike 2,
+            Rocket League i Valorant. Naš cilj je pružiti igračima mogućnost da se natječu, unaprijeđuju svoje vještine
+            i
+            osvajaju fantastične nagrade.</p>
+
+        <p>Ako dijelite strast prema video igrama i želite testirati svoje sposobnosti u raznim natjecanjima, pridružite
+            se
+            LuckyArena zajednici. Nudimo uzbudljiva gaming iskustva i priliku za stvaranje vlastitog tima.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white mt-5">
+
+        <div class="container py-5">
+            <img src="slike/logo.svg" alt="" class="float-right" style="max-width: 10%;">
+            <!-- Slogan -->
+            <p class="lead mb-4">
+                "Otkrij svoju strast, pridruži se natjecanju.<br>
+                Unaprijedi svoju igru, trijumfiraj u svakom izazovu.<br>
+                Igraj, Natječi se, Pobjeđuj – gdje počinju gaming snovi."
+            </p>
+
+            <!-- Copyright -->
+            <p>LuckyArena 2024 All Rights Reserved.</p>
+
+            <!-- Email and Tournaments Links -->
+            <div class="mb-3">
+                <a href="mailto:foto.male1@gmail.com" class="text-white mr-3">Email Kontakt</a>
+                <a href="#game-grid" class="text-white">Turniri</a>
+                <a href="o-nama.html" class="text-white ml-3">O nama</a>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="mb-3">
+                <a href="https://www.youtube.com/@karloplaysgames" class="text-white mr-2 social-icon" id="youtube"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.twitter.com" class="text-white mr-2 social-icon" id="twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" class="text-white mr-2 social-icon" id="instagram"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+
+
+            <p>LuckyArena is not endorsed by, directly affiliated with, maintained or sponsored by Riot Games or Epic
+                Games.
+                All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery
+                are
+                trademarks and/or copyright material of their respective owners.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.social-icon').forEach(icon => {
+            icon.addEventListener('click', function (event) {
+                event.preventDefault();
+                const href = this.getAttribute('href');
+                window.open(href, '_blank');
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

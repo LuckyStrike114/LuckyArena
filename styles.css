@@ -1,0 +1,135 @@
+body {
+  background: linear-gradient(to bottom, #ffffff, #cad5cc);
+  color: #333333;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #3498db;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-color: #27ae60;
+}
+
+/* Section styles */
+section {
+  background-color: #ecf0f1;
+  color: #333333;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+h1,
+h2 {
+  color: #27ae60;
+}
+
+
+#game-grid .game-box {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+#game-grid .game-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: #333 solid 10px;
+  object-fit: cover;
+  aspect-ratio: 6/7;
+  transition: opacity 0.3s ease;
+}
+
+#game-grid .game-box:hover img {
+  opacity: 0.6;
+}
+
+#game-grid .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#game-grid .game-box:hover .overlay {
+  opacity: 1;
+}
+
+#game-grid .overlay-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#game-grid .mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+.smaller-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#game-grid .game-box:hover a {
+  opacity: 1;
+}
+
+#carousel img {
+  max-height: 500px;
+  width: auto;
+  object-fit: cover;
+  margin: auto;
+}
+
+#tournaments {
+  text-align: center;
+}
+
+#search-box {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#tournaments-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#tournaments-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.social-icon {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #000;
+}
+
+.social-icon:active {
+  transform: scale(1.1);
+  color: #000;
+}
